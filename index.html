@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HW16</title>
+</head>
+
+<body>
+
+    <!--------------------------+------------+------------------------------------------------>
+    <!--------------------------| Text block |------------------------------------------------>
+    <!--------------------------+------------+------------------------------------------------>
+
+    <div class="text-field-block show-block">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <!--------------------------+-----------------+------------------------------------------->
+    <!--------------------------| Create new item |------------------------------------------->
+    <!--------------------------+-----------------+------------------------------------------->
+
+    <div class="text-field-block create-item-block">
+        <h4>Choose what you  want:</h4>
+        <div class="choose-create-option">
+            <label>
+                table
+                <input type="radio" name="create-new-item" id="tableCreate" class="create-item-radio">
+            </label>
+            <label>
+                list
+                <input type="radio" name="create-new-item" id="listCreate" class="create-item-radio">
+            </label>
+        </div>
+
+    <!--------------------------+--------------+---------------------------------------------->
+    <!--------------------------| Create table |---------------------------------------------->
+    <!--------------------------+--------------+---------------------------------------------->
+
+        <div class="style-table-create">
+
+            <div class="text-input">
+                <p class="lead">Count TR:</p>
+                <input type="text" class="form-control w-75" id="countTr" placeholder="Count TR:">
+            </div>
+
+            <div class="text-input">
+                <p class="lead">Count TD:</p>
+                <input type="text" class="form-control w-75" id="countTd" placeholder="Count TD:">
+            </div>
+
+            <h5>Add style to your table:</h5>
+
+            <div class="text-input">
+                <p class="lead">Width of TD:</p>
+                <input type="text" class="form-control w-75" id="widthTd" placeholder="Width of TD:">
+            </div>
+
+            <div class="text-input">
+                <p class="lead">Height of TD:</p>
+                <input type="text" class="form-control w-75" id="heightTd" placeholder="Height of TD:">
+            </div>
+
+            <div class="table-border-style">
+                
+                    <p class="lead">Width of border:</p>
+
+                    <div class="border-choose-wrapper w-75">
+                        <input type="text" class="form-control col-xs-1" id="borderWidthVal" placeholder="Width:">
+                
+                    
+                        <p class="lead">Type of border:</p>
+                        <select class="form-control col-xs-1 table-border-style" id="borderType">
+                            <option value="dashed">dashed</option>
+                            <option value="dotted">dotted</option>
+                            <option value="solid">solid</option>
+                            <option value="double">double</option>
+                            <option value="ridge">ridge</option>
+                            <option value="groove">groove</option>
+                            <option value="inset">inset</option>
+                            <option value="outset">outset</option>
+                        </select>
+                
+                        <p class="lead">Color of border:</p>
+                        <select class="form-control col-xs-1" id="borderColors">
+                            <option value="black">black</option>
+                            <option value="red">red</option>
+                            <option value="green">green</option>
+                            <option value="blue">blue</option>
+                        </select>
+                    </div>
+            </div>
+            <button class="btn btn-success" id="tableCreateBtn">Create table</button>
+        </div>
+
+    <!--------------------------+-------------+----------------------------------------------->
+    <!--------------------------| Create list |----------------------------------------------->
+    <!--------------------------+-------------+----------------------------------------------->
+
+        <div class="style-list-create">
+
+            <div class="text-input">
+                <p class="lead">Count LI:</p>
+                <input type="text" class="form-control w-75" id="countLi" placeholder="Count LI:">
+            </div>
+
+            <div class="text-input">
+                <p class="lead">Type of marks:</p>
+                <select class="form-control w-75 list-mark-style">
+                    <option value="circle">circle</option>
+                    <option value="disc">disc</option>
+                    <option value="square">square</option>
+                </select>
+            </div>
+            <button class="btn btn-success" id='createListBtn'>Create list</button>
+        </div>
+    </div>
+
+    <!--------------------------+----------------------------------+-------------------------->
+    <!--------------------------| Central buttons (edid and style) |-------------------------->
+    <!--------------------------+----------------------------------+-------------------------->
+
+    <div class="btn-groupe central-btn">
+        <button class="btn btn-warning">edit</button>
+        <button class="btn btn-info">style</button>
+    </div>
+
+    <!--------------------------+-----------------+------------------------------------------->
+    <!--------------------------| Text edit block |------------------------------------------->
+    <!--------------------------+-----------------+------------------------------------------->
+
+    <div class="text-field-block edit-text-field">
+        
+        <textarea class="text-field-block__texarea edit-block" id='editing-text'> </textarea>
+
+        <div class="btn-groupe">
+            <button class="btn btn-danger" id='add-btn'>add</button>
+            <button class="btn btn-success" id='save-btn'>save</button>
+        </div>
+
+        <div class="font-style-block">
+
+    <!--------------------------+----------------------------------+-------------------------->
+    <!--------------------------| Change the font size of the text |-------------------------->
+    <!--------------------------+----------------------------------+-------------------------->
+
+            <p>Font Size:</p>
+            <div class="radio-groupe">
+                <label class="radio-label">
+                    12px
+                    <input value="12px" class="radio-font" type="radio" name="font-size-radio">
+                </label>
+
+                <label class="radio-label">
+                    14px
+                    <input value="14px" class="radio-font" type="radio" name="font-size-radio">
+                </label>
+
+                <label class="radio-label">
+                    16px
+                    <input value="16px" class="radio-font" type="radio" name="font-size-radio">
+                </label>
+
+                <label class="radio-label">
+                    18px
+                    <input value="18px" class="radio-font" type="radio" name="font-size-radio">
+                </label>
+
+                <label class="radio-label">
+                    20px
+                    <input value="20px" class="radio-font" type="radio" name="font-size-radio">
+                </label>
+            </div>
+
+    <!--------------------------+-----------------------------+------------------------------->
+    <!--------------------------| Change the font of the text |------------------------------->
+    <!--------------------------+-----------------------------+------------------------------->
+
+            <p>Font Family:</p>
+            <select class="form-select">
+                <option value="">Choose option</option>
+                <option value='Noto Sans JP'>cursive</option>
+                <option value='Montserrat'>fantasy</option>
+                <option value='Roboto'>monospace</option>
+                <option value='sans-serif'>sens-serif</option>
+            </select>
+
+    <!--------------------------+--------------------------- +-------------------------------->
+    <!--------------------------| Buttons for changing colors|-------------------------------->
+    <!--------------------------+----------------------------+-------------------------------->
+
+            <p>Colors</p>
+            <div class="btn-groupe style-btn-groupe">
+                <button class="btn btn-secondary btn-color-change">Color of text</button>
+                <button class="btn btn-secondary bg-color-change">Background color</button>
+
+
+    <!--------------------------+----------------------------------+-------------------------->
+    <!--------------------------| Block with colors for bg or text |-------------------------->
+    <!--------------------------+----------------------------------+-------------------------->
+
+                <div class="change-color-box">
+                    <div class="color-box__block text-primary bg-primary"></div>
+                    <div class="color-box__block text-secondary bg-secondary"></div>
+                    <div class="color-box__block text-success bg-success"></div>
+                    <div class="color-box__block text-danger bg-danger"></div>
+                    <div class="color-box__block text-warning bg-warning"></div>
+                    <div class="color-box__block text-info bg-info"></div>
+                    <div class="color-box__block text-light bg-light"></div>
+                    <div class="color-box__block text-dark bg-dark"></div>
+                    <div class="color-box__block text-white bg-white"></div>
+                </div>
+            </div>
+
+    <!--------------------------+-------------------------+----------------------------------->
+    <!--------------------------| Stylization of the text |----------------------------------->
+    <!--------------------------+-------------------------+----------------------------------->
+
+            <p>Style</p>
+            <div class="checkbox-style-groupe">
+                <label>
+                    Bold text
+                    <input type="checkbox" value="bold" class="bold-btn checkBox-style">
+                </label>
+                <label>
+                    Cursive text
+                    <input type="checkbox" value="italic" class="cursive-btn checkBox-style">
+                </label>
+            </div>
+
+    <!---------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------->
+
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

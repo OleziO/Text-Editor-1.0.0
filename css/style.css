@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------------Container---------------------*/
+
+.text-field-block {
+    margin-top: 15px;
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(172, 203, 204);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/*-------------Text Block--------------------*/
+
+.show-block {
+    align-items: flex-start;
+    padding: 5vh;
+    font-size: 17px;
+}
+
+/*-------------Text edit Block---------------*/
+
+.text-field-block__texarea {
+    margin-top: 3vh;
+    width: 90%;
+    height: 70%;
+    border-radius: 5px;
+    border: none;
+}
+
+.edit-block {
+    text-align: center;
+    font-size: 17px;
+}
+
+.edit-text-field  p {
+    margin-top: 1vh;
+}
+
+/*-------------Creating new item-------------*/
+
+.choose-create-option {
+    display: flex;
+}
+
+.create-item-block {
+    height: 55vh;
+    width: 70%;
+    padding: 3vh;
+    display: none;
+    align-items: flex-start;
+}
+
+.create-item-radio {
+    margin-right: 2vw;
+}
+
+/*-------------Creating table-------------*/
+
+.style-table-create {
+    display: none;
+    width: 100%;
+    margin-top: 1vh;
+}
+
+.table-crate {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-input {
+    margin-bottom: 1vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.lead {
+    font-size: 20px;
+}
+
+.text-input input {
+    margin-left: 1vw;
+}
+
+.table-border-style {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-border-style p {
+    width: 8vw;
+}
+
+.table-border-style input, .table-border-style select {
+    width: 8vw;
+}
+
+.border-choose-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*-------------Creating list--------------*/
+
+.style-list-create {
+    display: none;
+    width: 100%;
+    margin-top: 1vh;
+}
+
+/*-------------Buttons container-------------*/
+
+.btn-groupe {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+}
+
+/*-------------Central Buttons---------------*/
+
+.central-btn {
+    width: 50vw;
+    justify-content: center;
+}
+
+.btn {
+    margin-right: 7px;
+}
+
+/*-------------Change font of text-----------*/
+
+.font-style-block{
+    display: none;
+    font-weight: bold;
+    height: 100%;
+    width: 90%;
+    padding: 1vh;
+    margin-left: 15px;
+}
+
+/*-------------Font size buttons-------------*/
+
+.radio-font {
+    margin-right: 10px;
+    width: 1vw;
+    height: 1vw;
+}
+
+.radio-groupe {
+    margin-top: -1vh;
+}
+
+.radio-label {
+    font-weight: normal;
+}
+
+/*-------------Colors change-----------------*/
+
+.style-btn-groupe {
+    margin-top: -1vh;
+    height: 7vh;
+    width: 100%;
+}
+
+.btn-color-change {
+    height: 80%;
+}
+
+.bg-color-change {
+    height: 80%;
+}
+
+.color-box__block {
+    height: 33.3333%;
+    width: 33.3333%;
+    border: 1px solid black;
+}
+
+/*-------------Font style change-----------------*/
+
+.checkbox-style-groupe {
+    margin-top: -1vh;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.checkBox-style {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.change-color-box {
+    height: 15vh;
+    width: 15vh;
+    border: 1px solid black;
+    display: flex;
+    margin-left: 10vw;
+    flex-wrap: wrap;
+    display: none;
+}
+
+/*-------------Adaptive design-------------------*/
+
+@media screen and (max-height: 992px){
+    .edit-text-field {
+        height: 45vh;
+    }
+}
+
+@media screen and (max-height: 890px){
+    .edit-text-field {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-height: 795px){
+    .edit-text-field {
+        height: 55vh;
+    }
+}
+
+@media screen and (max-height: 735px){
+    .edit-text-field {
+        height: 60vh;
+    }
+}
+
+/*----------------------------------------------*/
